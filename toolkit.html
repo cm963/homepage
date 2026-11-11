@@ -3,36 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>技术工作台 · 陈默</title>
-<meta name="description" content="把 AI 当研究流程的一部分：核验、排版、采集、发布，每一环都有可复用脚本与留痕。">
-<meta property="og:title" content="技术工作台 · 陈默">
-<meta property="og:description" content="把 AI 当研究流程的一部分：核验、排版、采集、发布，每一环都有可复用脚本与留痕。">
+<title>技术能力 · 陈默</title>
+<meta name="description" content="把方法写成流程：数据、文献、文档与发布，每一环都能复现。">
+<meta property="og:title" content="技术能力 · 陈默">
+<meta property="og:description" content="把方法写成流程：数据、文献、文档与发布，每一环都能复现。">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 <div id="prog"></div>
 <header class="top"><div class="wrap">
 <a class="brand" href="index.html"><span class="dot"></span>Mo Chen <span>/ 陈默</span></a>
-<nav><a href="index.html">首页</a><a href="research.html">科研</a><a href="teaching.html">教学</a><a href="publications.html">成果</a><a href="toolkit.html">技术工作台</a><a href="about.html">关于</a><a href="posts.html">文章</a></nav>
+<nav><a href="index.html">首页</a><a href="research.html">科研</a><a href="teaching.html">教学</a><a href="publications.html">成果</a><a href="toolkit.html">技术能力</a><a href="about.html">关于</a><a href="posts.html">文章</a></nav>
 <a class="langbtn" href="en/toolkit.html">EN</a>
 </div></header>
-<main><section class="pg"><div class="wrap"><div class="sec-head"><h2>技术工作台</h2><span class="n">04 / TOOLKIT</span><span class="line"></span></div><div class="lead">把 AI 当研究流程的一部分：核验、排版、采集、发布，每一环都有可复用脚本与留痕。</div><div class="blk reveal"><h3>文档生产流水线（真实脚本）</h3><pre class='code'><code># 学术文档排版：python-docx 自检（字号/行距/三线表/签字栏）
-python-docx 排版速查  →  模板克隆  →  版式自检  →  三处交付
-
-# PPT 生成与版式自检：python-pptx
-pptx 生成  →  逐页自检  →  说课结构定稿
-
-# PDF 表格提取：pymupdf
-扫描件 / 表格  →  坐标级抽取  →  结构化数据
-
-# 图像处理：PIL + scipy（高斯归一化卷积去水印，边界零误差）
-文字定位  →  掩膜  →  归一化卷积修复  →  像素级比对
-
-# 文献核验：CrossRef / OpenAlex / Semantic Scholar / CNKI 采编系统
-DOI 检索  →  题录比对  →  著录规则统一  →  核验记录入库</code></pre></div><div class="blk reveal"><h3>知识库与自动化</h3><div class='grid g2'><div class='card reveal'><h4>三大知识域（Obsidian）</h4><p>科研（博士论文 / SSCI / 课题 / 文献核验 / 方法论）、教研（四门课档案 / 课程思政 / 材料制作 / 考核评价 / 教研管理）、日常（交付流程 / 技术手册 / 踩坑库 / AI 协作铁律 / 自检机制）+ 交付物总台账。</p><div class='meta'>40+ 篇笔记</div></div><div class='card reveal'><h4>每周自动自检</h4><p>定时任务每周日 09:00 自动体检知识库与运行环境，异常自动生成巡检报告并推送。</p><div class='meta'>cron · 周日 09:00</div></div><div class='card reveal'><h4>GDELT 事件数据采集器</h4><p>定时拉取全球事件数据库，落地本地语料库供主题建模与情绪分析使用。</p><div class='meta'>launchd · 每日 09:00</div></div><div class='card reveal'><h4>文档三处交付</h4><p>任何对外文档固定三处到齐：本地 + 飞书云盘 + 群内直发；群消息长文走文件，文字回复控制在 1500 字符内。</p><div class='meta'>流程固化</div></div><div class='card reveal'><h4>个人主页自动发布</h4><p>本机静态站 + GitHub Pages 双通道，内容写进 JSON 后一条命令重建、校验并发布，链接变更自动同步到知识库与群。</p><div class='meta'>cm963.github.io/homepage</div></div><div class='card reveal'><h4>AI 协作五铁律</h4><p>超时必须自行解决并继续任务；接到任务先问清再执行；学术内容绝不编造；涉及人名职务 100% 基于已有数据；交付三处到齐。</p><div class='meta'>永久规则</div></div></div></div><div class="blk reveal"><h3>技术栈</h3><div class='tags'><span>Python</span><span>LDA / sklearn</span><span>χ² / ITS</span><span>GDELT API</span><span>CrossRef</span><span>OpenAlex</span><span>Semantic Scholar</span><span>CNKI</span><span>pymupdf</span><span>python-docx</span><span>python-pptx</span><span>PIL + scipy</span><span>SQLite</span><span>Feishu API</span><span>launchd</span><span>GitHub Pages</span><span>Markdown / Obsidian</span><span>Shell 自动化</span></div></div></div></section></main>
+<main><section class="pg"><div class="wrap"><div class="sec-head"><h2>技术能力</h2><span class="n">04 / TOOLKIT</span><span class="line"></span></div><div class="lead">把方法写成流程：数据、文献、文档与发布，每一环都能复现。</div><div class="blk reveal"><h3>技术能力</h3><div class='grid g2'><div class='card reveal'><h4>语料与建模</h4><p>从全球事件数据库构建 4,934 条语料，用主题归纳替代词典匹配，再映射到四维度指标体系并做断点检验。</p><div class='meta'>事件数据库 · 主题建模 · 显著性检验</div></div><div class='card reveal'><h4>文献核验</h4><p>CrossRef、OpenAlex、CNKI 采编系统、语义学术多通道交叉核验，著录规则统一，每条引用可回查。</p><div class='meta'>CrossRef · OpenAlex · CNKI · Semantic Scholar</div></div><div class='card reveal'><h4>文档工程</h4><p>用 Python 完成学术文档排版与版式自检、PDF 表格结构化抽取、图像修复与批量处理。</p><div class='meta'>python-docx · python-pptx · pymupdf · PIL</div></div><div class='card reveal'><h4>结构化知识管理</h4><p>用 Obsidian 建立三条主线的知识库：科研、教研、实践互相链接，可检索、可复用、可交接。</p><div class='meta'>Markdown · Obsidian · SQLite</div></div><div class='card reveal'><h4>自动化发布</h4><p>自建静态站的构建与部署流程：内容更新后一条命令完成构建、校验、发布与链接同步，中英双版本。</p><div class='meta'>静态站 · GitHub Pages · 双语</div></div><div class='card reveal'><h4>工作方法</h4><p>不编造：引用必核验、结论必可回查；需求先澄清再动手；不因单点失败中断整件事。</p><div class='meta'>五条原则</div></div></div></div><div class="blk reveal"><h3>技术栈</h3><div class='tags'><span>Python</span><span>LDA / sklearn</span><span>χ² / ITS</span><span>GDELT API</span><span>CrossRef</span><span>OpenAlex</span><span>CNKI</span><span>pymupdf</span><span>python-docx</span><span>python-pptx</span><span>PIL + scipy</span><span>SQLite</span><span>Markdown / Obsidian</span><span>GitHub Pages</span><span>静态站</span><span>Linux / launchd</span></div></div></div></section></main>
 <footer><div class="wrap">
 <span>© 2026 陈默 · 应急管理大学 · 网络与新媒体专业</span>
-<span><a href="https://orcid.org/0009-0003-2832-5018">ORCID 0009-0003-2832-5018</a> · built with openclaw</span>
+<span><a href="https://orcid.org/0009-0003-2832-5018">ORCID 0009-0003-2832-5018</a> · static site · auto-published</span>
 </div></footer>
 <script src="assets/app.js"></script>
 </body>
