@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Toolkit · 陈默</title>
+<meta name="description" content="AI as part of the research pipeline: verification, layout, collection and publishing — each step scripted and traceable.">
+<meta property="og:title" content="Toolkit · 陈默">
+<meta property="og:description" content="AI as part of the research pipeline: verification, layout, collection and publishing — each step scripted and traceable.">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div id="prog"></div>
+<header class="top"><div class="wrap">
+<a class="brand" href="../index.html"><span class="dot"></span>Mo Chen <span>/ 陈默</span></a>
+<nav><a href="../index.html">Home</a><a href="../research.html">Research</a><a href="../teaching.html">Teaching</a><a href="../publications.html">Publications &amp; Output</a><a href="../toolkit.html">Toolkit</a><a href="../about.html">About</a><a href="../posts.html">Writing</a></nav>
+<a class="langbtn" href="../toolkit.html">中</a>
+</div></header>
+<main><section class="pg"><div class="wrap"><div class="sec-head"><h2>Toolkit</h2><span class="n">04 / TOOLKIT</span><span class="line"></span></div><div class="lead">AI as part of the research pipeline: verification, layout, collection and publishing — each step scripted and traceable.</div><div class="blk reveal"><h3>Document pipeline</h3><pre class='code'><code># Academic document layout: python-docx self-QA (fonts / spacing / three-line tables / signature blocks)
+python-docx layout  →  template cloning  →  layout self-check  →  deliver to three places
+
+# Slides: python-pptx  →  per-slide QA  →  finalized lecture deck
+
+# PDF table extraction: pymupdf  →  coordinate-level extraction  →  structured data
+
+# Image work: PIL + scipy (normalized-convolution inpainting, zero error outside the mask)
+text detection  →  mask  →  normalized convolution  →  pixel-level diff
+
+# Reference verification: CrossRef / OpenAlex / Semantic Scholar / CNKI editorial systems
+DOI lookup  →  record comparison  →  unified citation rules  →  verification log</code></pre></div><div class="blk reveal"><h3>Knowledge base &amp; automation</h3><div class='grid g2'><div class='card reveal'><h4>Three knowledge domains</h4><p>Research (thesis / SSCI / grants / verification / methods), teaching (four course files / course designation / material production / assessment / program management) and operations (delivery process / tech handbooks / pitfalls / working rules / self-audit), plus a delivery ledger.</p><div class='meta'>40+ notes</div></div><div class='card reveal'><h4>Weekly self-audit</h4><p>A scheduled job audits the knowledge base and runtime every Sunday at 09:00 and pushes an inspection report.</p><div class='meta'>cron · Sun 09:00</div></div><div class='card reveal'><h4>GDELT collector</h4><p>A scheduled collector pulls the Global Events Database into a local corpus for topic modelling and tone analysis.</p><div class='meta'>launchd · daily 09:00</div></div><div class='card reveal'><h4>Three-place delivery</h4><p>Every external document lands in three places — local, cloud drive and the group chat — with long content sent as files and chat replies kept under 1,500 characters.</p><div class='meta'>Codified process</div></div><div class='card reveal'><h4>Self-publishing homepage</h4><p>A local static site plus GitHub Pages; one command rebuilds, verifies and publishes, then syncs the link back to the knowledge base and the group.</p><div class='meta'>cm963.github.io/homepage</div></div><div class='card reveal'><h4>Five working rules for AI</h4><p>Solve timeouts and keep going; clarify before executing; never fabricate scholarship; base every claim on real data; deliver to three places.</p><div class='meta'>Standing rules</div></div></div></div><div class="blk reveal"><h3>Stack</h3><div class='tags'><span>Python</span><span>LDA / sklearn</span><span>χ² / ITS</span><span>GDELT API</span><span>CrossRef</span><span>OpenAlex</span><span>Semantic Scholar</span><span>CNKI</span><span>pymupdf</span><span>python-docx</span><span>python-pptx</span><span>PIL + scipy</span><span>SQLite</span><span>Feishu API</span><span>launchd</span><span>GitHub Pages</span><span>Markdown / Obsidian</span><span>Shell automation</span></div></div></div></section></main>
+<footer><div class="wrap">
+<span>© 2026 陈默 · University of Emergency Management · New Media &amp; Network Communication</span>
+<span><a href="https://orcid.org/0009-0003-2832-5018">ORCID 0009-0003-2832-5018</a> · built with openclaw</span>
+</div></footer>
+<script src="../assets/app.js"></script>
+</body>
+</html>
